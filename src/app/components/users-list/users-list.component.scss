@@ -1,0 +1,16 @@
+.users-list {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    &__item {
+        cursor: pointer;
+        //hover cinza para o item tabela angular material
+
+    }
+    td{
+        :hover {
+            background-color: lightgray;
+        }
+    }
+}

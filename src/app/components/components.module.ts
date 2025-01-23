@@ -20,6 +20,7 @@ import { UsersListComponent } from './users-list/users-list.component';
     exports: [
       UserDetailsComponent,
       FilterComponent,
+      UsersListComponent
     ],
 })
 

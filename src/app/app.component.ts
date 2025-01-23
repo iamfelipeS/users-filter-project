@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IUser } from './interfaces/user.interface';
+import { UserList } from './data/users-list';
 
 @Component({
   selector: 'app-root',
@@ -6,4 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  selectedUser: IUser = UserList[0];
 }

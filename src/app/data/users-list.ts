@@ -8,7 +8,7 @@ export const UserList: IUser[] = [
         age: 30,
         address: {
             "street": "Rua das Flores",
-            "number": 123,
+            "number": undefined,
             "city": "São Paulo",
             "state": "SP",
             "country": "BRA"
@@ -53,7 +53,7 @@ export const UserList: IUser[] = [
         address: {
             "street": "789 Oak St",
             "number": 1011,
-            "city": "Somewhere",
+            "city": "",
             "state": "TX",
             "country": "USA"
         },

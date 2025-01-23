@@ -1,0 +1,40 @@
+<div class="filter">
+    <div class="form-container">
+        <form class="form"> 
+            <div class="form__name">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nome</mat-label>
+                    <input matInput placeholder="Nome">
+                </mat-form-field>
+            </div>
+
+            <div class="form__date-picker">
+                <mat-form-field>
+                    <mat-label>Data de Cadastro</mat-label>
+                    <mat-date-range-input [rangePicker]="picker" [lang]="'pt-BR'">
+                        <input matStartDate placeholder="Data inicial">
+                        <input matEndDate placeholder="FData final">
+                    </mat-date-range-input>
+                    <mat-hint>DD/MM/YYYY – DD/MM/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-date-range-picker #picker></mat-date-range-picker>
+                </mat-form-field>
+            </div>
+
+            <div class="form__status">
+                <mat-form-field>
+                    <mat-label>Favorite food</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let food of foods" [value]="food.value">{{food.viewValue}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="form__button">
+                <div class="example-button-row">
+                    <button mat-raised-button color="primary">Filtrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

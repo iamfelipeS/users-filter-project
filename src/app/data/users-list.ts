@@ -13,7 +13,7 @@ export const UserList: IUser[] = [
             "state": "SP",
             "country": "BRA"
         },
-        phone: "+1 234 567 8901",
+        phone: "11 9 6412 3345",
         active: true,
         role: "admin",
         createdAt: "2024-10-08T23:59:59Z",
@@ -35,7 +35,7 @@ export const UserList: IUser[] = [
             "state": "NY",
             "country": "USA"
         },
-        phone: "+1 987 654 3210",
+        phone: "33 9 1234 5678",
         active: true,
         role: "user",
         createdAt: "2023-12-31T23:59:59Z",
@@ -57,7 +57,7 @@ export const UserList: IUser[] = [
             "state": "TX",
             "country": "USA"
         },
-        phone: "+1 555 123 4567",
+        phone: "  ",
         active: false,
         role: "user",
         createdAt: "2023-12-31T23:59:59Z",
@@ -79,7 +79,7 @@ export const UserList: IUser[] = [
             "state": "TX",
             "country": "USA"
         },
-        phone: "+1 555 123 4567",
+        phone: "33 1233 4567",
         active: true,
         role: "user",
         createdAt: "2023-12-31T23:59:59Z",

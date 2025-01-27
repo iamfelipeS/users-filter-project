@@ -26,7 +26,7 @@
         <mat-divider></mat-divider>
 
         <mat-list-item>
-            <span class="mat-h2">Status: </span><span class="mat-h3">{{user.status?.online ? 'Ativo' : 'Inativo'}}</span>
+            <span class="mat-h2">Status: </span><span class="mat-h3">{{user.status.online | status}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 

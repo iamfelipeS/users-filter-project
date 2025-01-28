@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IUser } from './interfaces/user.interface';
-import { UserList } from './data/users-list';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +7,12 @@ import { UserList } from './data/users-list';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  userSelected: IUser = UserList[0];
+  showUserDetails: boolean = false;
+
+  userSelected: IUser = {} as IUser;
 
   onUserSelected(user: IUser) {
-    console.log('User selected:', user);
-
     this.userSelected = user;
+    this.showUserDetails = true;
   }
 }

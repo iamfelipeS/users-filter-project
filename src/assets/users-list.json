@@ -1,0 +1,200 @@
+[
+    {
+        "name": "Felipe Silva",
+        "email": "felipes@example.com",
+        "password": "password123",
+        "age": 30,
+        "address": {
+            "street": "Rua das Flores",
+            "number": null,
+            "city": "São Paulo",
+            "state": "SP",
+            "country": "BRA"
+        },
+        "phone": "11 9 6412 3345",
+        "active": true,
+        "role": "admin",
+        "createdAt": "2024-10-08T23:59:59Z",
+        "status": {
+            "online": true,
+            "verified": true,
+            "lastAccess": "2024-10-12T10:59:59Z"
+        }
+    },
+    {
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "password": "password456",
+        "age": 25,
+        "address": {
+            "street": "456 Elm St",
+            "number": 789,
+            "city": "Anothertown",
+            "state": "NY",
+            "country": "USA"
+        },
+        "phone": "33 9 1234 5678",
+        "active": true,
+        "role": "user",
+        "createdAt": "2023-12-31T23:59:59Z",
+        "status": {
+            "online": false,
+            "verified": true,
+            "lastAccess": "2023-12-31T23:59:59Z"
+        }
+    },
+    {
+        "name": "Bob Johnson",
+        "email": "bobjohnson@examplecom",
+        "password": "password789",
+        "age": 35,
+        "address": {
+            "street": "789 Oak St",
+            "number": 1011,
+            "city": "",
+            "state": "TX",
+            "country": "USA"
+        },
+        "phone": "",
+        "active": false,
+        "role": "user",
+        "createdAt": "2023-12-31T23:59:59Z",
+        "status": {
+            "online": false,
+            "verified": false,
+            "lastAccess": "2023-12-31T23:59:59Z"
+        }
+    },
+    {
+        "name": "Alice Lee",
+        "email": "alicelee@examplecom",
+        "password": "password123",
+        "age": 28,
+        "address": {
+            "street": "789 Elm St",
+            "number": 2345,
+            "city": "Somewhere",
+            "state": "TX",
+            "country": "USA"
+        },
+        "phone": "33 1233 4567",
+        "active": true,
+        "role": "user",
+        "createdAt": "2023-12-31T23:59:59Z",
+        "status": {
+            "online": false,
+            "verified": true,
+            "lastAccess": "2023-10-31T23:59:59Z"
+        }
+    },
+    {
+        "name": "Carlos Mendes",
+        "email": "carlosm@example.com",
+        "password": "securepass123",
+        "age": 40,
+        "address": {
+            "street": "Avenida Brasil",
+            "number": 500,
+            "city": "Rio de Janeiro",
+            "state": "RJ",
+            "country": "BRA"
+        },
+        "phone": "21 98765 4321",
+        "active": true,
+        "role": "admin",
+        "createdAt": "2024-01-15T10:30:00Z",
+        "status": {
+            "online": true,
+            "verified": true,
+            "lastAccess": "2024-01-20T15:45:00Z"
+        }
+    },
+    {
+        "name": "Luiza Pereira",
+        "email": "luizap@example.com",
+        "password": "mypassword321",
+        "age": 23,
+        "address": {
+            "street": "Rua da Paz",
+            "number": 120,
+            "city": "Salvador",
+            "state": "BA",
+            "country": "BRA"
+        },
+        "phone": "71 91234 5678",
+        "active": true,
+        "role": "user",
+        "createdAt": "2024-02-01T12:00:00Z",
+        "status": {
+            "online": false,
+            "verified": true,
+            "lastAccess": "2024-02-15T09:00:00Z"
+        }
+    },
+    {
+        "name": "Miguel Torres",
+        "email": "miguel.torres@example.com",
+        "password": "pass1234",
+        "age": 29,
+        "address": {
+            "street": "Rua dos Sonhos",
+            "number": 77,
+            "city": "Belo Horizonte",
+            "state": "MG",
+            "country": "BRA"
+        },
+        "phone": "31 93321 4455",
+        "active": true,
+        "role": "user",
+        "createdAt": "2024-03-20T08:45:00Z",
+        "status": {
+            "online": true,
+            "verified": true,
+            "lastAccess": "2024-03-21T18:30:00Z"
+        }
+    },
+    {
+        "name": "Sophia Oliveira",
+        "email": "sophia.oliveira@example.com",
+        "password": "sophia123",
+        "age": 27,
+        "address": {
+            "street": "Rua do Sol",
+            "number": 200,
+            "city": "Curitiba",
+            "state": "PR",
+            "country": "BRA"
+        },
+        "phone": "41 94567 8910",
+        "active": false,
+        "role": "user",
+        "createdAt": "2024-04-10T14:00:00Z",
+        "status": {
+            "online": false,
+            "verified": true,
+            "lastAccess": "2024-04-12T10:00:00Z"
+        }
+    },
+    {
+        "name": "João Costa",
+        "email": "joao.costa@example.com",
+        "password": "joaopass456",
+        "age": 34,
+        "address": {
+            "street": "Rua Verde",
+            "number": 654,
+            "city": "Porto Alegre",
+            "state": "RS",
+            "country": "BRA"
+        },
+        "phone": "51 97765 4321",
+        "active": true,
+        "role": "user",
+        "createdAt": "2024-05-05T09:30:00Z",
+        "status": {
+            "online": false,
+            "verified": false,
+            "lastAccess": "2024-05-10T20:00:00Z"
+        }
+    }
+]

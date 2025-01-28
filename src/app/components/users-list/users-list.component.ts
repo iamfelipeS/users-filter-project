@@ -17,7 +17,13 @@ export class UsersListComponent implements OnInit {
   private userListService = inject(UsersListService);
 
   ngOnInit() {
-    this.userListService.getUsersList().subscribe({
+    this.getUsersList();
+  }
+  onUserSelected(user: IUser) {
+    this.userSelectedEmitt.emit(user);
+  }
+  getUsersList() {
+    this.userListService.list().subscribe({
       next: (data) => {
         this.usersList = data;
       },
@@ -25,9 +31,6 @@ export class UsersListComponent implements OnInit {
         console.log(error);
       }
     });
-  }
-  onUserSelected(user: IUser) {
-    this.userSelectedEmitt.emit(user);
   }
 }
 

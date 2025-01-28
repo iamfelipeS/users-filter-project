@@ -11,7 +11,7 @@ export class UsersListService {
   // private readonly API = 'https://jsonplaceholder.typicode.com/users';
   private readonly API = '/assets/users-list.json';
 
-  getUsersList(): Observable<IUser[]> {
+  list(): Observable<IUser[]> {
     return this.http.get<IUser[]>(this.API);
   }
 }

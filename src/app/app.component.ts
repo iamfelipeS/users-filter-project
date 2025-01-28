@@ -8,5 +8,11 @@ import { UserList } from './data/users-list';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  selectedUser: IUser = UserList[0];
+  userSelected: IUser = UserList[0];
+
+  onUserSelected(user: IUser) {
+    console.log('User selected:', user);
+
+    this.userSelected = user;
+  }
 }

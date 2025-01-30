@@ -10,7 +10,7 @@ import { UsersListService } from 'src/app/services/users-list.service';
 export class UsersListComponent implements OnInit {
   usersList: IUser[] = [];
 
-  displayedColumns: string[] = ['name', 'email', 'age', 'phone', 'role', 'createdAt', 'status'];
+  displayedColumns: string[] = ['name', 'email', 'age', 'phone', 'createdAt', 'status'];
 
   @Output('userSelected') userSelectedEmitt = new EventEmitter<IUser>();
 

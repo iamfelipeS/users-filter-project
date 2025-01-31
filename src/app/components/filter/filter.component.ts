@@ -1,4 +1,4 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { IFilterOptions } from 'src/app/interfaces/filter-options.interface';
 
 @Component({
@@ -7,6 +7,8 @@ import { IFilterOptions } from 'src/app/interfaces/filter-options.interface';
   styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent {
+  @Output() filterChanged = new EventEmitter<IFilterOptions>();
+
   filterOptions: IFilterOptions = {
     name: undefined,
     startDate: undefined,
@@ -19,7 +21,10 @@ export class FilterComponent {
     { description: 'Inativo', value: false },
   ];
 
-  onFilter(event: any) {
-    console.log(event);
+  applyFilter() {
+    this.filterChanged.emit({ ...this.filterOptions });
+    console.log(this.filterOptions);
   }
+
+
 }

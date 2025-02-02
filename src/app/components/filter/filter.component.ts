@@ -17,6 +17,7 @@ export class FilterComponent {
   }
 
   statusList = [
+    { description: 'Todos', value: undefined },
     { description: 'Ativo', value: true },
     { description: 'Inativo', value: false },
   ];

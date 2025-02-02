@@ -3,14 +3,13 @@
     height: 100%;
 }
 
-// .form-container{
-//     display: flex;
-//     width: 100%;
-//     flex-direction: wrap;
-//     display: flex;
-//     gap: 1rem;
-//     background-color: yellowgreen;
-// }
+.form-container{
+
+    &__button{
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .form{
     width: 100%;
@@ -20,7 +19,7 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-
+    margin-bottom: 0.5rem;
     
     &__name{
     }
@@ -30,7 +29,14 @@
 
     &__status{
     }
-
-    &__button{
+    
+    &__clearFilter{
     }
+    
+}
+
+.clearFilter__btn{
+    color: red;
+    cursor: pointer;
+    font-size: 12px;
 }

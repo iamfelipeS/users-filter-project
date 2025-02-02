@@ -32,10 +32,14 @@
                 </mat-form-field>
             </div>
 
-            <div class="form__button">
-                <div class="example-button-row">
-                    <button mat-raised-button color="primary" (click)="applyFilter()">Filtrar</button>
-                </div>
+            <div class="form__clearFilter">
+                <span class="clearFilter__btn" (click)="clearFilter()">Limpar Filtros</span>
+            </div>
+        </div>
+
+        <div class="form-container__button">
+            <div class="example-button-row">
+                <button mat-raised-button color="primary" (click)="applyFilter()">Filtrar</button>
             </div>
         </div>
     </div>

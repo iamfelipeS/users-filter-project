@@ -26,5 +26,9 @@ export class FilterComponent {
     console.log(this.filterOptions);
   }
 
+  clearFilter(){
+    this.filterChanged.emit({ ...this.filterOptions } = {} as IFilterOptions);
+    console.log(this.filterOptions)
+  }
 
 }

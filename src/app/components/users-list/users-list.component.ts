@@ -44,9 +44,10 @@ export class UsersListComponent implements OnChanges {
     this.filteredUsers = this.usersList.filter(user => {
       const nameMatches = !this.filterOptions.name || user.name.toLowerCase().includes(this.filterOptions.name.toLowerCase());
       const statusMatches = this.filterOptions.status === undefined || user.status?.online === this.filterOptions.status;
-      // const dateMatches = !this.filterOptions.startDate || !this.filterOptions.endDate || user.createdAt >= this.filterOptions.startDate && user.createdAt <= this.filterOptions.endDate;
+      const startDateMatches = !this.filterOptions.startDate || new Date(user.createdAt) >= new Date(this.filterOptions.startDate);
+      const endDateMatches = !this.filterOptions.endDate || new Date(user.createdAt) <= new Date(this.filterOptions.endDate);
       
-      return nameMatches && statusMatches;
+      return nameMatches && statusMatches && startDateMatches && endDateMatches;
     });
 
     console.log("Usuários filtrados:", this.filteredUsers);

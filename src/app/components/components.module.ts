@@ -6,12 +6,14 @@ import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { UsersListComponent } from './users-list/users-list.component';
 import { PipesModule } from "../pipes/pipes.module";
+import { UserCreateComponent } from './user-create/user-create.component';
 
 @NgModule({
     declarations: [
     UserDetailsComponent,
     FilterComponent,
-    UsersListComponent
+    UsersListComponent,
+    UserCreateComponent
   ],
     imports: [
         FormsModule,
@@ -22,7 +24,8 @@ import { PipesModule } from "../pipes/pipes.module";
     exports: [
       UserDetailsComponent,
       FilterComponent,
-      UsersListComponent
+      UsersListComponent,
+      UserCreateComponent
     ],
 })
 

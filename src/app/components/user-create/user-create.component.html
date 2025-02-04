@@ -1,35 +1,33 @@
+<mat-list-item class="u-text-align-center">
+    <h2 mat-dialog-title>Criar usuário</h2>
+</mat-list-item>
 <div class="user-create">
-    <mat-list-item class="u-text-align-center">
-        <h2 mat-dialog-title>Criar usuário</h2>
-    </mat-list-item>
-
-    <button mat-raised-button color="primary" (click)="toggleDialog()">Novo</button>
-</div>
-<h4 mat-dialog-title>Criar usuário</h4>
-<mat-dialog-content>
-    <mat-form-field>
-        <mat-label>Nome</mat-label>
-        <input matInput [(ngModel)]="newUser.name" />
-
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Email</mat-label>
-        <input matInput [(ngModel)]="newUser.email" />
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Telefone</mat-label>
-        <input matInput [(ngModel)]="newUser.phone" />
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Endereço</mat-label>
-        <input matInput [(ngModel)]="newUser.address" />
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Idade</mat-label>
-        <input matInput [(ngModel)]="newUser.age" />
-    </mat-form-field>
-</mat-dialog-content>
-<mat-dialog-actions>
-    <button mat-button (click)="toggleDialog()">Cancelar</button>
-    <button mat-button [mat-dialog-close]="createUser( newUser)" cdkFocusInitial>Salvar</button>
-</mat-dialog-actions>
+        <div>
+            <mat-form-field>
+                <mat-label>Nome</mat-label>
+                <input matInput [(ngModel)]="newUser.name" />
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput [(ngModel)]="newUser.email" />
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Telefone</mat-label>
+                <input matInput [(ngModel)]="newUser.phone" />
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Endereço</mat-label>
+                <input matInput [(ngModel)]="newUser.address" />
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Idade</mat-label>
+                <input matInput [(ngModel)]="newUser.age" />
+            </mat-form-field>
+        </div>
+    </div>
+    <mat-dialog-actions>
+        <button mat-button (click)="openDialog(false)">Cancelar</button>
+        <button mat-button [mat-dialog-close]="createUser( newUser)" cdkFocusInitial>Salvar</button>
+    </mat-dialog-actions>

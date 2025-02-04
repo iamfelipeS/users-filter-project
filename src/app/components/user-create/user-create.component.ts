@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { IUser } from 'src/app/interfaces/user.interface';
 
 @Component({
@@ -7,12 +8,18 @@ import { IUser } from 'src/app/interfaces/user.interface';
   styleUrls: ['./user-create.component.scss']
 })
 export class UserCreateComponent {
-  dialog = false
-
   newUser = {} as IUser
 
-  toggleDialog(){
-    this.dialog = !this.dialog
+   dialog = inject(MatDialog);
+
+  openDialog(dialogTemplate: any): void {
+    const dialogRef = this.dialog.open(dialogTemplate, { width: '400px' });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.createUser(result);
+      }
+    });
   }
 
   createUser(user: IUser){

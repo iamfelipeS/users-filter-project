@@ -7,8 +7,12 @@
             <app-users-list [filterOptions]="filterOptions" (userSelected)="onUserSelected($event)"></app-users-list>
         </div>
     </div>
-    <div class="right-div">
-        <app-user-details [user]="userSelected" *ngIf="showUserDetails"></app-user-details>
+    <div class="right-container">
+        <div class="right-div">
+            <app-user-details [user]="userSelected" *ngIf="showUserDetails"></app-user-details>
+        </div>
+        <div class="right-bottom-div">
+            <app-user-create></app-user-create>
+        </div>
     </div>
-
 </div>

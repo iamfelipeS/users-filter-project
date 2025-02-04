@@ -18,6 +18,16 @@
     height: 80%; //Ocupa 80% da altura do container pai
 }
 
+.right-container {
+ display: flex;
+ flex-direction: column;
+}
+
 .right-div {
+    width: 50%;
+    height: 45%; 
+}
+
+.right-bottom-div {
     width: 50%;
 }
